@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        <section class="header">
+          <img src="./images/logo.svg" alt="Base Apparel">
+        </section>
+        
+        <section class="content">
+          
+          <picture>
+            <source media="(min-width:62rem)" srcset="./images/hero-desktop.jpg">
+            <img src="./images/hero-mobile.jpg" alt="Woman">
+          </picture>
+          
+          <section class="info">
+            <h1><section class="hd1">We're</section> coming <br>soon</h1>
+            <p class="text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+            <form id="form" action="#" class="form" onsubmit="return validation()" method="post">
+              <div id="dinput" class="input">  
+                <input  type="text" name="" id="email" placeholder="Email Address">
+                <div class="icons">
+                  
+                  <img id="att" class="att" src="./images/icon-error.svg" alt="error">
+                  <button type="submit">
+                    <img class="btn" src="./images/icon-arrow.svg" alt="arrow">
+                  </button>
+                </div>
+              </div>
+              <span id="error" class="error"></span>
+            </form>
+          </section>
+        </section>
+      </div>
+    </div>
+  </main>
+<script src="./main.js"></script>
+</body>
+</html>

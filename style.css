@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+main {
+  min-height: 100vh;
+  background-color: azure;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.card .header {
+  padding: 2rem;
+}
+.card .header img {
+  width: 8rem;
+}
+.card .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.card .content picture {
+  width: 100%;
+}
+.card .content picture img {
+  width: 100%;
+}
+.card .info {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  text-align: center;
+}
+.card .info h1 {
+  color: hsl(0deg, 6%, 24%);
+  text-transform: uppercase;
+  padding: 3rem 0 1rem 0;
+  font-weight: 600;
+  font-size: 2.5rem;
+  letter-spacing: 0.8rem;
+}
+.card .info .hd1 {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+.card .info .text {
+  color: hsl(0deg, 36%, 70%);
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+.card .info .form .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 0.0625rem solid hsl(0deg, 36%, 70%);
+  border-radius: 1.8rem;
+  border-right: none;
+}
+.card .info .form .input ::-webkit-input-placeholder {
+  color: hsl(0deg, 36%, 70%);
+}
+.card .info .form .input input {
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+  background: content-box;
+  border: none;
+  outline: none;
+}
+.card .info .form .input .icons {
+  display: flex;
+  align-items: center;
+}
+.card .info .form .input .icons .att {
+  padding-right: 1rem;
+  visibility: hidden;
+}
+.card .info .form .input .icons button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.card .info .form .btn {
+  display: flex;
+  background: linear-gradient(135deg, hsl(0deg, 80%, 86%), hsl(0deg, 74%, 74%));
+  border-radius: 1.8rem;
+  padding: 1rem 2rem;
+}
+.card .info .form .btn:hover {
+  background: linear-gradient(135deg, hsl(0deg, 100%, 91%), hsl(0deg, 100%, 86%));
+  box-shadow: 0rem 0.625rem 1.875rem -0.625rem rgba(0, 0, 0, 0.6);
+}
+.card .info .form .error {
+  display: block;
+  padding: 1rem 0 0 1rem;
+  text-align: left;
+  color: hsl(0deg, 93%, 68%);
+}
+
+@media (min-width: 62rem) {
+  .header {
+    position: absolute;
+    left: 2.8rem;
+  }
+  .card .content {
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+  .card .content picture {
+    width: auto;
+  }
+  .card .content picture img {
+    width: auto;
+    height: 99.6vh;
+  }
+  .card .info {
+    padding: 0 5rem 0 5rem;
+    text-align: start;
+  }
+  .card .info h1 {
+    font-size: 3.5rem;
+  }
+  .card .info .form .btn {
+    padding: 1rem 2.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
